@@ -1,6 +1,6 @@
 import math
 from tkinter import *
-from tkinter import filedialog
+
 
 from fpdf import FPDF
 
@@ -61,13 +61,7 @@ def stop_time():
     pdf.cell(200, txt=a[1])
     pdf_file = pdf.output("result.pdf")
 
-    # files = [('PDF Files', '*.pdf')]
-    # filedialog.asksaveasfile(filetypes=files, initialfile=pdf_file,
-    #                                              initialdir="/", title="Select A file",
-    #                                              defaultextension=".pdf", mode="wb")
-    # if file_to_save is None:
-    #     return
-    # pdf_file.save()
+
 
 
 welcome_label = Label(text="Start typing.\n"
